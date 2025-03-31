@@ -1,2 +1,2 @@
 # PDI-FRONTEND
- Aprendizagem Frontend
+ Aprendizagem Frontend - Frameworker
