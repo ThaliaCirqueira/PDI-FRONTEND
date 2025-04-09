@@ -1,0 +1,48 @@
+body{
+    padding-bottom: 500px;
+}
+h3 {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+
+ul {
+    border: 1px solid blue;
+    padding: 10px;
+}
+/* comentário */
+li {
+    color: darkblue;
+}
+
+/* Classes */
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+/* id */
+#exclusive {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* Regras */
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid green;
+
+}
