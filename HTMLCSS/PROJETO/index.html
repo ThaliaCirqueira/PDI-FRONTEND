@@ -7,23 +7,34 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <header> <!--Abraçar todos os elementos iniciais do meu cabeçalho-->
-      <nav id="navbar"> <!--Usao para criar uma are ade links que ajuda o usuário a navear pelo site-->
-        <div id="navbar-inner"> <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
-          <h2>Blog</h2> <!--Titulo-->
+    <header>
+      <!--Abraçar todos os elementos iniciais do meu cabeçalho-->
+      <nav id="navbar">
+        <!--Usao para criar uma are ade links que ajuda o usuário a navear pelo site-->
+        <div id="navbar-inner">
+          <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
+          <h2>Blog</h2>
+          <!--Titulo-->
           <ul id="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Categorias</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
         </div>
-    </nav>
-    <div class="container"> <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
-      <main id="posts-container"> <!--Semantica para post do blog --> <!--Semantica para post do blog -->
-        <article class="post"> <!--tag para artigos, para colocar o artigo do blog, para todos os article  possam ter conteudos diferentes -->
-          <img src="img/f1.jpg" alt="Passeio de barco" /> <!--a imagem não tem legenda, coloco asism pois quero simplesmente exibir o que ela representa -->
+      </nav>
+    </header>
+    <div class="container">
+      <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
+      <main id="posts-container">
+        <!--Semantica para post do blog -->
+        <!--Semantica para post do blog -->
+        <article class="post">
+          <!--tag para artigos, para colocar o artigo do blog, para todos os article  possam ter conteudos diferentes -->
+          <img src="img/f1.jpg" alt="Passeio de barco" />
+          <!--a imagem não tem legenda, coloco asism pois quero simplesmente exibir o que ela representa -->
           <h3 class="title"><a href="#">Algum título</a></h3>
-          <p class="description"> <!--Inicio do texto um resumo -->
+          <p class="description">
+            <!--Inicio do texto um resumo -->
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
             non, placeat quam accusamus velit a ad molestiae vitae praesentium,
             quae reiciendis!
@@ -56,20 +67,25 @@
           <a href="#">Ler mais</a>
         </article>
       </main>
-      
+
       <aside id="sidebar">
         <!--Separando em cessoes busca, categorias e tags-->
         <section id="search-bar">
-          <h4>Busca</h4> <!--titulo-->
+          <h4>Busca</h4>
+          <!--titulo-->
           <form>
-            <input type="text" placeholder="Pesquise no blog" /> <!--caixa para bucar itens da pagina-->
-            <input type="submit" value="Buscar" /> 
+            <input type="text" placeholder="Pesquise no blog" />
+            <!--caixa para bucar itens da pagina-->
+            <input type="submit" value="Buscar" />
           </form>
         </section>
-        <section id="categories"> <!--listando gategorias no site-->
-          <h4>Categorias</h4> <!--titulo-->
+        <section id="categories">
+          <!--listando gategorias no site-->
+          <h4>Categorias</h4>
+          <!--titulo-->
           <nav>
-            <ul> <!--listas:opções a serem selecionadas na pagina-->
+            <ul>
+              <!--listas:opções a serem selecionadas na pagina-->
               <li><a href="#">Paisagens</a></li>
               <li><a href="#">Aventura</a></li>
               <li><a href="#">Viagens longas</a></li>
@@ -80,7 +96,8 @@
         </section>
         <section id="tags">
           <h4>Tags</h4>
-          <div id="tags-container"> <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
+          <div id="tags-container">
+            <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
             <a href="#">Lifestyle</a>
             <a href="#">Viagem</a>
             <a href="#">Barco</a>
@@ -92,9 +109,10 @@
         </section>
       </aside>
     </div>
-    <footer id="footer"> <!--rodapé-->
+    <footer id="footer">
+      <!--rodapé-->
       <h2>Blog</h2>
-      <p>Os melhores registros de aventuras</p> 
+      <p>Os melhores registros de aventuras</p>
       <p>2022 © Hora de Codar</p>
     </footer>
   </body>
