@@ -1,147 +1,198 @@
 /* Geral */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: Georgia;
+* { 
+  padding: 0; /* Remove espaçamento interno padrão de todos os elementos */
+  margin: 0; /* Remove margem padrão de todos os elementos */
+  font-family: Georgia; /* Define a fonte padrão como Georgia */
 }
 
-ul {
-  list-style: none;
+ul { 
+  list-style: none; /* Remove os marcadores das listas não ordenadas */
 }
 
-a {
-  text-decoration: none;
-  color: #444;
-  transition: 0.4s;
+a { 
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #444; /* Define a cor padrão dos links como cinza */
+  transition: 0.4s; /* Adiciona uma transição suave nas interações */
 }
 
-a:hover {
-  color: #37a1f7;
+a:hover { 
+  color: #37a1f7; /* Altera a cor dos links para azul claro ao passar o mouse */
 }
 
 /* Navbar */
-#navbar {
-  padding: 1.5rem 2.5rem;
-  border-bottom: 2px solid #ddd;
+#navbar { 
+  padding: 1.5rem 2.5rem; /* Define espaço interno para a barra de navegação */
+  border-bottom: 2px solid #ddd; /* Adiciona uma borda inferior na barra de navegação */
 }
 
-#navbar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+#navbar-inner { 
+  display: flex; /* Alinha os elementos internos em linha */
+  justify-content: space-between; /* Espaça os elementos de forma uniforme */
+  align-items: center; /* Centraliza os itens verticalmente */
+  max-width: 1200px; /* Define largura máxima para o contêiner interno */
+  margin: 0 auto; /* Centraliza a barra horizontalmente */
 }
 
-#nav-links {
-  display: flex;
-  gap: 1rem;
+#nav-links { 
+  display: flex; /* Alinha os links em linha */
+  gap: 1rem; /* Adiciona espaçamento entre os links */
 }
 
 /* conteúdo principal */
-.container {
-  display: flex;
-  padding: 2rem 2.5rem;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.container { 
+  display: flex; /* Alinha os elementos do contêiner principal em linha */
+  padding: 2rem 2.5rem; /* Define espaço interno no contêiner principal */
+  gap: 3rem; /* Adiciona espaçamento entre os elementos filhos */
+  max-width: 1200px; /* Define largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
 }
 
-#posts-container {
-  flex: 3 1 0;
+#posts-container { 
+  flex: 3 1 0; /* Define que o contêiner dos posts ocupará mais espaço */
 }
 
-.post {
-  margin-bottom: 2.5rem;
+.post { 
+  margin-bottom: 2.5rem; /* Adiciona espaçamento inferior entre os posts */
 }
 
-.post img {
-  width: 100%;
-  margin-bottom: 1rem;
+.post img { 
+  width: 100%; /* Faz a imagem ocupar toda a largura do post */
+  margin-bottom: 1rem; /* Adiciona espaçamento abaixo da imagem */
 }
 
-.title,
-.description,
-.author {
-  margin-bottom: 1rem;
+.title, 
+.description, 
+.author { 
+  margin-bottom: 1rem; /* Adiciona espaçamento inferior em cada elemento */
 }
 
-.title {
-  font-size: 2rem;
+.title { 
+  font-size: 2rem; /* Define tamanho grande para os títulos */
 }
 
-.author {
-  color: #333;
-  font-weight: bold;
+.author { 
+  color: #333; /* Define a cor do texto como cinza escuro */
+  font-weight: bold; /* Deixa o texto em negrito */
 }
 
 /* barra lateral */
-#sidebar {
-  flex: 1 1 0;
+#sidebar { 
+  flex: 1 1 0; /* Define o tamanho e comportamento do sidebar em relação ao layout flex */
 }
 
-#search-bar,
-#categories,
-#tags {
-  padding: 1.5rem;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
+/* Configuração da caixa fixa */
+#subscribe-box { 
+  position: sticky; /* Faz com que a caixa fique fixa ao rolar a página */
+  top: 0; /* Posiciona no canto superior direito */
+  background-color: #fffefe; /* Define um fundo claro */
+  color: #000000; /* Define a cor do texto como preto */
+  padding: 0rem; /* Remove espaço interno */
+  border: 1px solid #fffefe; /* Adiciona uma borda leve */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor da caixa */
+  z-index: 10; /* Garante que a caixa esteja acima de outros elementos */
+  margin-bottom: 1rem; /* Adiciona espaçamento inferior entre as seções */
 }
 
-#search-bar h4,
-#categories h4,
-#tags h4 {
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
+#subscribe-box h4 { 
+  font-size: 1.6rem; /* Define tamanho do texto para o título da seção */
+  margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
 }
 
-#search-bar form {
-  display: flex;
+#subscribe-box p { 
+  font-size: 1.2rem; /* Define tamanho do texto para o parágrafo da seção */
+  margin-bottom: 1rem; /* Espaçamento abaixo do parágrafo */
 }
 
-#search-bar input {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+#subscribe-form { 
+  display: flex; /* Configura o layout do formulário para alinhamento em coluna */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 1rem; /* Adiciona espaçamento entre os campos do formulário */
 }
 
-#search-bar input[type="submit"] {
-  cursor: pointer;
-  background-color: #37a1f7;
-  color: #fff;
-  border: none;
+#subscribe-form, 
+#subscribe-form { 
+  padding: 0.8rem; /* Define espaço interno para os campos do formulário */
+  border: 1px solid #000000; /* Adiciona uma borda branca nos campos */
+  border-radius: 5px; /* Adiciona bordas arredondadas nos campos */
+  width: 100%; /* Define que os campos ocupem toda a largura do contêiner */
 }
 
-#categories li {
-  margin-bottom: 1rem;
+#subscribe-form { 
+  padding: 0rem; /* Adiciona espaço interno no botão de envio */
+  background-color: #ffffff; /* Define fundo branco para o botão */
+  color: #000000; /* Define cor do texto no botão */
+  border: none; /* Remove borda padrão do botão */
+  border-radius: 5px; /* Adiciona bordas arredondadas no botão */
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+  transition: 0.3s; /* Define transição suave para o botão */
 }
 
-#tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+/* barra lateral: busca, categorias e tags */
+#search-bar, 
+#categories, 
+#tags { 
+  padding: 1.5rem; /* Adiciona espaço interno para as seções */
+  border: 1px solid #ddd; /* Adiciona borda nas seções */
+  margin-bottom: 1rem; /* Adiciona espaçamento entre as seções */
 }
 
-#tags-container a {
-  background-color: #ddd;
-  padding: 0.5rem 0.7rem;
-  border-radius: 0.3rem;
+#search-bar h4, 
+#categories h4, 
+#tags h4 { 
+  margin-bottom: 1.5rem; /* Adiciona espaçamento abaixo dos títulos das seções */
+  font-size: 1.6rem; /* Define tamanho do texto dos títulos das seções */
+}
+
+#search-bar form { 
+  display: flex; /* Alinha os campos do formulário em linha */
+}
+
+#search-bar input { 
+  padding: 0.5rem 1rem; /* Define espaço interno nos campos de busca */
+  border: 1px solid #ddd; /* Adiciona borda leve nos campos de busca */
+}
+
+#search-bar input[type="submit"] { 
+  cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+  background-color: #37a1f7; /* Define fundo azul para o botão */
+  color: #fff; /* Define cor do texto no botão */
+  border: none; /* Remove borda padrão do botão */
+}
+
+/* Categorias */
+#categories li { 
+  margin-bottom: 1rem; /* Adiciona espaçamento entre os itens das categorias */
+}
+
+/* Tags */
+#tags-container { 
+  display: flex; /* Alinha as tags em linha */
+  flex-wrap: wrap; /* Permite quebra de linha caso as tags excedam a largura do contêiner */
+  gap: 0.5rem; /* Adiciona espaçamento entre as tags */
+}
+
+#tags-container a { 
+  background-color: #ddd; /* Define fundo cinza claro para as tags */
+  padding: 0.5rem 0.7rem; /* Define espaço interno nas tags */
+  border-radius: 0.3rem; /* Adiciona bordas arredondadas nas tags */
 }
 
 /* Rodapé */
-#footer {
-  border-top: 2px solid #ddd;
-  padding: 3rem;
-  text-align: center;
+#footer { 
+  border-top: 2px solid #ddd; /* Adiciona borda superior no rodapé */
+  padding: 3rem; /* Define espaço interno no rodapé */
+  text-align: center; /* Alinha texto do rodapé ao centro */
 }
 
-#footer h2,
-#footer p {
-  margin-bottom: 1rem;
+#footer h2, 
+#footer p { 
+  margin-bottom: 1rem; /* Adiciona espaçamento inferior nos elementos do rodapé */
 }
 
 /* Responsivo */
-@media (max-width: 450px) {
-  .container {
-    flex-wrap: wrap;
+@media (max-width: 450px) { 
+  .container { 
+    flex-wrap: wrap; /* Permite quebra de linha para dispositivos menores */
   }
 }

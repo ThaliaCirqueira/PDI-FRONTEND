@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Configurações iniciais do documento -->
     <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Torna o site responsivo -->
     <title>Blog</title>
+    <!-- Título do blog que aparece na aba do navegador -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Link para o arquivo de estilização (CSS) -->
   </head>
   <body>
+    <!-- Cabeçalho principal -->
     <header>
-      <!--Abraçar todos os elementos iniciais do meu cabeçalho-->
+      <!-- Barra de navegação -->
       <nav id="navbar">
-        <!--Usao para criar uma are ade links que ajuda o usuário a navear pelo site-->
+        <!-- Área interna da barra de navegação para estilização -->
         <div id="navbar-inner">
-          <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
           <h2>Inteligencia Artificial</h2>
-          <!--Titulo-->
+          <!-- Título do blog -->
+          <!-- Links de navegação -->
           <ul id="nav-links">
             <li><a href="#">Home</a></li>
+            <!-- Link para a página inicial -->
             <li><a href="#">Categorias</a></li>
+            <!-- Link para categorias -->
             <li><a href="#">Contato</a></li>
+            <!-- Link para a página de contato -->
           </ul>
         </div>
       </nav>
     </header>
+
+    <!-- Conteúdo principal do site -->
     <div class="container">
-      <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
+      <!-- Seção principal com os artigos do blog -->
       <main id="posts-container">
-        <!--Semantica para post do blog -->
-        <!--Semantica para post do blog -->
+        <!-- Artigo do blog com conteúdo dinâmico -->
         <article class="post">
-          <!--tag para artigos, para colocar o artigo do blog, para todos os article  possam ter conteudos diferentes -->
           <img src="img/Image1.png" alt="Cerebro digital" />
-          <!--a imagem não tem legenda, coloco asism pois quero simplesmente exibir o que ela representa -->
+          <!-- Imagem ilustrativa com descrição -->
           <h3 class="title">
             <a href="#">Como a IA está moldando o futuro</a>
+            <!-- Título do post com link -->
           </h3>
           <p class="description">
-            <!--Inicio do texto um resumo -->
+            <!-- Resumo do artigo -->
             A inteligência artificial é uma das inovações mais impactantes do
             século XXI. Descubra como ela está revolucionando desde a saúde até
             as finanças.
           </p>
           <p class="author">Por: Thalia Cirqueira</p>
+          <!-- Autor do artigo -->
           <a href="#">Ler mais</a>
-          <!--Replicando o article para os demais artigos da pagina-->
+          <!-- Link para ler o artigo completo -->
         </article>
+
+        <!-- Repetindo estrutura para mais artigos -->
         <article class="post">
-          <img src="img/f2.jpg" alt="Cachoeira" />
+          <img src="img/Image 2.png" alt="IA Robô Futurista" />
           <h3 class="title">
             <a href="#"
               >IA na Saúde: Salvando Vidas e Revolucionando Tratamentos</a
@@ -54,54 +67,82 @@
           </h3>
           <p class="description">
             A aplicação de inteligência artificial na saúde está mudando vidas.
-            Desde diagnósticos mais precisos de doenças raras até terapias
-            personalizadas baseadas no DNA, a IA tem sido uma aliada essencial.
-            Tecnologias como aprendizado de máquina e algoritmos preditivos
-            estão ajudando médicos a identificar condições antes que elas se
-            agravem. Descubra como o futuro da medicina está se tornando mais
-            ágil e eficiente com a IA.
+            Desde diagnósticos mais precisos até terapias personalizadas
+            baseadas no DNA.
           </p>
           <p class="author">Por: Thalia Cirqueira</p>
           <a href="#">Ler mais</a>
         </article>
-        <!--Replicando o article para os demais artigos da pagina-->
+
         <article class="post">
           <img src="img/f3.jpg" alt="Balões" />
           <h3 class="title">
             <a href="#">IA e Finanças: O Futuro das Decisões Inteligentes</a>
           </h3>
           <p class="description">
-            No mercado financeiro, a inteligência artificial desempenha um papel
-            crítico. Ela analisa grandes volumes de dados em segundos,
-            permitindo que investidores tomem decisões baseadas em tendências e
-            padrões. Além disso, a IA está automatizando tarefas repetitivas,
-            como processamento de pagamentos, e garantindo maior segurança em
-            transações com detecção avançada de fraudes. Prepare-se para um
-            setor financeiro mais dinâmico e seguro!
+            No mercado financeiro, a inteligência artificial está ajudando
+            investidores e automatizando tarefas críticas, garantindo segurança
+            e eficiência.
           </p>
           <p class="author">Por: Thalia Cirqueira</p>
           <a href="#">Ler mais</a>
         </article>
       </main>
 
+      <!-- Barra lateral para informações adicionais -->
       <aside id="sidebar">
-        <!--Separando em cessoes busca, categorias e tags-->
-        <section id="search-bar">
-          <h4>Busca</h4>
-          <!--titulo-->
-          <form>
-            <input type="text" placeholder="Pesquise no blog" />
-            <!--caixa para bucar itens da pagina-->
-            <input type="submit" value="Buscar" />
+        <!-- Seção fixa para inscrição -->
+        <section id="subscribe-box">
+          <h4>Receba Novidades</h4>
+          <!-- Título da seção -->
+          <p>
+            Cadastre seu nome e e-mail para receber as últimas novidades sobre
+            tecnologia.
+          </p>
+          <!-- Texto descritivo -->
+          <form id="subscribe-form">
+            <label for="name">Nome:</label>
+            <!-- Campo para o nome do visitante -->
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              required
+            />
+            <label for="email">E-mail:</label>
+            <!-- Campo para o e-mail do visitante -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu e-mail"
+              required
+            />
+            <input type="submit" value="Inscrever-se" />
+            <!-- Botão de envio -->
           </form>
         </section>
+
+        <!-- Barra de busca -->
+        <section id="search-bar">
+          <h4>Busca</h4>
+          <!-- Título da seção -->
+          <form>
+            <input type="text" placeholder="Pesquise no blog" />
+            <!-- Campo de busca -->
+            <input type="submit" value="Buscar" />
+            <!-- Botão de envio -->
+          </form>
+        </section>
+
+        <!-- Listagem de categorias -->
         <section id="categories">
-          <!--listando gategorias no site-->
           <h4>Categorias</h4>
-          <!--titulo-->
+          <!-- Título da seção -->
           <nav>
-            <ul>  
-              <!--listas:opções a serem selecionadas na pagina-->
+            <!-- Lista de categorias com links -->
+            <ul>
               <li>
                 <a href="machine-learning.html" target="_blank"
                   >Machine Learning</a
@@ -145,10 +186,13 @@
             </ul>
           </nav>
         </section>
+
+        <!-- Listagem de tags -->
         <section id="tags">
           <h4>Tags</h4>
+          <!-- Título da seção -->
           <div id="tags-container">
-            <!--adicionado uma div aqui para estilizar essa parte da pagina e deixar o blog na largura e nos parametros que quero-->
+            <!-- Tags clicáveis -->
             <a href="#">5G</a>
             <a href="#">Startups</a>
             <a href="#">Gadgets</a>
@@ -162,11 +206,15 @@
         </section>
       </aside>
     </div>
+
+    <!-- Rodapé -->
     <footer id="footer">
-      <!--rodapé-->
       <h2>Blog</h2>
-      <p>Os melhores registros de aventuras</p>
-      <p>2022 © Hora de Codar</p>
+      <!-- Título do rodapé -->
+      <p>O Melhor da Tecnologia</p>
+      <!-- Descrição -->
+      <p>2025 © Hora de Codar</p>
+      <!-- Direitos autorais -->
     </footer>
   </body>
 </html>
