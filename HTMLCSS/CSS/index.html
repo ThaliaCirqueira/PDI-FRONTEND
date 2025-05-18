@@ -13,7 +13,14 @@
     /
     <link rel="Stylesheet" href="Style.css" />
     <link rel="Stylesheet" href="list.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <h1 style="color: blue">Cores</h1>
     <h1 style="color: purple; font-size: 50px; border-bottom: 1px solid red">
@@ -26,6 +33,10 @@
 
     <!--Ordem CSS-->
     <p style="color: red">Ordem do CSS</p>
+
+    <div class="sticky">
+      <span>Sou o Sticky!</span>
+    </div>
 
     <ul>
       <li>Banana</li>
@@ -57,17 +68,17 @@
     <p class="simple-hex-2">Hex simplificado</p>
 
     <!-- rgb -->
-     <p class="rgb">Este foi estilizado com RGB</p>
-     <p class="midex-rgb">Este foi estilizado com RGB</p>
+    <p class="rgb">Este foi estilizado com RGB</p>
+    <p class="midex-rgb">Este foi estilizado com RGB</p>
 
-     <!-- rgbA -->
-     <p class="rgba">Este foi estilizado com RGBA</p>
+    <!-- rgbA -->
+    <p class="rgba">Este foi estilizado com RGBA</p>
 
-     <!-- hls -->
-     <p class="hsl">Este foi estilizado com hsl</p>
-     <p class="hsl-2">Este foi estilizado com hsl 2</p>
+    <!-- hls -->
+    <p class="hsl">Este foi estilizado com hsl</p>
+    <p class="hsl-2">Este foi estilizado com hsl 2</p>
 
-     <!-- background-color -->
+    <!-- background-color -->
     <p class="bg">Mude o meu background</p>
     <p class="bg-2">Mude o meu background 2</p>
 
@@ -82,16 +93,15 @@
 
     <div class="rbga-opacity">
       <h1>Este titulo precisa estar visivel</h1>
-    </div>  
+    </div>
 
     <h1 class="bg-imagem">Este título tem uma imagem!</h1>
-
 
     <div class="not-centered-bg"></div>
     <div class="centered-bg"></div>
 
-    <div class="height-widt" ></div>
-    <div class="height-widt-2" ></div>
+    <div class="height-widt"></div>
+    <div class="height-widt-2"></div>
 
     <div class="without-padding">Este não tem padding</div>
     <div class="padding">Este tem padding</div>
@@ -100,9 +110,100 @@
 
     <p class="shorthand-padding">Algum texto</p>
     <p class="shorthand-padding2">Algum texto2</p>
-    </div>
-    <!-- ------------------------------------------------------------------------------------- -->
 
-    
+    <div class="without-border-box">
+      <p>Algum conteúdo</p>
+    </div>
+    <div class="border-box">
+      <p>Algum conteúdo2</p>
+    </div>
+    <div class="border">Borda</div>
+    <div class="border-2">Borda2</div>
+
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda interior</p>
+
+    <div class="rounded-p">Eu estou arredondando</div>
+    <div class="rounded-p-2">Eu estou arredondando</div>
+    <div class="rounded-p-3">Eu estou arredondando</div>
+
+    <div class="margin">Eu tenho margem</div>
+    <div class="margin-top">Eu tenho margem no topo</div>
+    <div class="margin-shorthand">Utilizando Shorthand</div>
+
+    <div class="box-model">
+      <p>Propriedades do box model</p>
+    </div>
+
+    <p class="text-aligned">Alinhado a direita</p>
+    <div class="container-center">
+      <h2>Estamos centralizando</h2>
+      <p>Algum texto</p>
+    </div>
+
+    <p class="underline">Eu tenho um underline</p>
+    <p class="line-trougt">u tenho um risco</p>
+    <a href="#" class="remove-underline">Sem underline</a>
+
+    <p class="upper">Este texto é em caixa alta</p>
+    <p class="lower">ESTE TEXTO É EM LOWER</p>
+
+    <h2 class="spacing">Eu tenho um espaço maior</h2>
+
+    <p class="serif">serif fonte</p>
+    <p class="sans-serif">sans-serif fonte</p>
+    <p class="monospace">monospace fonte</p>
+    <p class="cursive">Cursive fonte</p>
+    <p class="fantasy">fantasy fonte</p>
+
+    <p class="italic">Texo Itálico</p>
+    <p class="oblique">Texo em oblíquo</p>
+
+    <p class="thin">Mais fino</p>
+    <p class="bold">Estou em bold</p>
+    <p class="bolder">maior fonte</p>
+
+    <h4 class="small">Titulo pequeno</h4>
+    <h4 class="big">Titulo Grande</h4>
+
+    <div class="inline-box">a</div>
+    <div class="inline-box">b</div>
+    <div class="inline-box">c</div>
+
+    <span class="Block">Teste</span>
+    <span class="Block">Teste 2</span>
+
+    <p class="invisible">Me encontre se puder</p>
+
+    <div class="static">
+      <span>Estático</span>
+    </div>
+
+    <div class="relative">
+      <span>relative</span>
+    </div>
+    <p>Paragrafo</p>
+
+    <div class="absolute">
+      <span>Absolute</span>
+    </div>
+    <p>Paragrafo</p>
+
+    <div class="relative-container">
+      <div class="absolute-1"></div>
+      <div class="absolute-2"></div>
+    </div>
+
+    <div class="fixed">
+      <span>Estou fixo</span>
+    </div>
+
+    <div class="relative-container">
+      <div class="absolute-3"></div>
+      <div class="absolute-4"></div>
+      <div class="absolute-5"></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------- -->
   </body>
 </html>

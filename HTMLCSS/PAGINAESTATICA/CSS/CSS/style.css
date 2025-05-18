@@ -1,0 +1,96 @@
+header {
+  background-color: rgb(235, 131, 131);
+  padding: 20px;
+  border-bottom: 2px solid #ffffff;
+  h1 {
+    text-align: center;
+    color: rgb(180, 38, 38);
+    font-size: 3em;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.topo {
+  background-color: #ffc6c6;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.topo h2 {
+  font-size: 2em;
+}
+
+.topo p {
+  margin-bottom: 30px;
+}
+
+.botao {
+  background-color: #e26e6e;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 10px 10px;
+  border: 1px solid #e26e6e;
+}
+
+.conteudo {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));  */
+  gap: 60px;
+  margin: 50px;
+}
+
+.artigo {
+  flex: 1;
+  min-width: 500px;
+  background-color: #e26e6e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.artigo img {
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.formulario {
+  text-align: center;
+  background-color: #f7dede;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.formulario input {
+  padding: 10px;
+  border: 1px solid #fcd0d0;
+  border-radius: 10px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 80%;
+  max-width: 300px;
+  margin: auto;
+}

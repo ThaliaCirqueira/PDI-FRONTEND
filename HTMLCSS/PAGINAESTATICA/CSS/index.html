@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vida Leve</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>Vida Leve</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#bem-estar">Bem-estar</a></li>
+          <li><a href="#saude">Saúde</a></li>
+          <li><a href="#produtividade">Produtividade</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="topo" id="inicio">
+      <div class="titulo">
+        <h2>Cuide da sua saúde e viva com leveza</h2>
+        <p>
+          Adote hábitos saudáveis e transforme seu dia a dia com escolhas que
+          beneficiam sua mente e corpo.
+        </p>
+        <a href="cadastro" class="botao">Cadastre-se</a>
+      </div>
+    </section>
+    <main class="corpo">
+      <section class="conteudo">
+        <article class="artigo" id="Alimentacao">
+          <h2>Alimentação equilibrada</h2>
+          <p>
+            Uma alimentação saudável é essencial para o funcionamento do corpo e
+            da mente. Priorizar alimentos naturais, como frutas, verduras e
+            proteínas magras, ajuda a manter os níveis de energia e fortalece o
+            sistema imunológico.
+          </p>
+          <img src="Alimentos.jpg" alt="Mesa com alimentos saudáveis" />
+        </article>
+        <article class="artigo" id="Atividade">
+          <h2>Importância da atividade física</h2>
+          <p>
+            O exercício físico não é só uma ferramenta para manter a forma, mas
+            também fundamental para a saúde mental. Praticar atividades como
+            caminhadas, yoga ou musculação contribui para reduzir o estresse e
+            melhorar a qualidade do sono.
+          </p>
+          <img src="Atividade.jpeg" alt="Pessoa fazendo exercicio fisico" />
+        </article>
+        <article class="artigo" id="Equilibrio">
+          <h2>Saúde mental e equilíbrio emocional</h2>
+          <p>
+            Cuidar da saúde mental é tão importante quanto cuidar do corpo.
+            Práticas como meditação, leitura e momentos de lazer são essenciais
+            para manter um equilíbrio emocional, reduzindo ansiedade e
+            melhorando a qualidade de vida.
+          </p>
+          <img src="equilibrio.jpg" alt="Pessoa fazendo ioga" />
+        </article>
+        <article class="artigo" id="bem-estar">
+          <h2>Hidratação e bem-estar</h2>
+          <p>
+            Manter-se hidratado é essencial para o funcionamento do organismo.
+            Beber água regularmente auxilia na digestão, melhora a concentração
+            e mantém a pele saudável. Além disso, evita problemas como dores de
+            cabeça e fadiga.
+          </p>
+          <img src="bem-estar.jpg" alt="pessoa sorrindo" />
+        </article>
+        <article class="artigo" id="Sono">
+          <h2>Benefícios do sono de qualidade</h2>
+          <p>
+            Dormir bem é fundamental para a saúde física e mental. Um sono
+            adequado melhora a memória, fortalece o sistema imunológico e ajuda
+            na regulação do humor. Criar uma rotina noturna tranquila contribui
+            para noites mais revigorantes.
+          </p>
+          <img src="sono.jpg" alt="pessoa dormindo" />
+        </article>
+        <article class="artigo" id="estresse">
+          <h2>Práticas para reduzir o estresse</h2>
+          <p>
+            O estresse faz parte da vida, mas é importante saber como
+            gerenciá-lo. Técnicas como respiração profunda, momentos de lazer e
+            contato com a natureza ajudam a equilibrar a mente e o corpo,
+            proporcionando mais bem-estar.
+          </p>
+          <img src="respiracao.jpeg" alt="pessoa respirando fundo" />
+        </article>
+      </section>
+      <section class="formulario" id="cadastro">
+        <h2>Cadastre-se para receber novidades</h2>
+        <form action="cadastro.php" method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+          <button type="submit" class="botao">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+    <footer id="rodape" class="contato">
+      <p>&copy; 2025 Vida Leve. Todos os direitos reservados.</p>
+      <div class="redesocial">
+        <a href="Instagram">Instagram</a>
+        <a href="Pinterest">Pinterest</a>
+        <a href="LinkedIn">LinkedIn</a>
+      </div>
+    </footer>
+  </body>
+</html>
