@@ -1,4 +1,4 @@
-// 1.Number = todo dado numerico e considerado Number
+    // 1.Number = todo dado numerico e considerado Number
 console.log(typeof 2);
 console.log(typeof 2.2);
 console.log(typeof -4);
